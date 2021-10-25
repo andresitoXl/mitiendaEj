@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+
+        <img src="../IMG/logo.png" alt="Logo del sitio" width="125px" height="80px">
+        <input type="search">
+        <h2 class="mensaje_principal"> Mensaje de bienvenida</h2>
+        <ul id="barra_navegacion">
+
+            <li><a href="mi_cuenta.html"> Mi cuenta </a></li>
+            <li><a href="mis_favoritos.html"> Mis favoritos </a></li>
+            <li><a href="../carrito.html"> Carrito </a></li>
+            <li><a href="ingresar.html"> Ingresar o salir </a></li>
+            <li><a href="registrar.html"> Registrar </a></li>
+
+        </ul>
+        <ul id="menú_principal">
+
+            <li><a href="../index.html"> Inicio </a></li>
+            <li><a href="../menu_principal/productos.html"> Productos </a></li>
+            <li><a href="../menu_principal/papeleria.html"> Papelería </a></li>
+            <li><a href="../carrito.html"> Carrito </a></li>
+            <li><a href="../menu_principal/pagar.html"> Pagar </a></li>
+
+        </ul>
+    </header>
+    <nav>
+        <fieldset>
+            <legend>Registrate</legend>
+            <div>
+                <label for="Name"> Nombre y Apellido</label>
+                <input type="text" placeholder="aquí tu nombre" required>
+                <br><br>
+            </div>
+            <div>
+                <label for="email">Ingresa tu email</label>
+                <input type="text" placeholder="Correo eléctronico" required>
+                <br><br>
+            </div>
+            <div>
+                <label for="phone">Número de télefono</label>
+                <input type="number" placeholder="ingresa tu número télefonico" required>
+                <br><br>
+            </div>
+            <div>
+                <label for="options">¿Como te identificas?</label>
+                <select name="" id="" required>
+                    <option value="empresa">Empresa</option>
+                    <option value="persona_natural">Persona natural</option>
+                    <option value="persona_juridica">Persona Juridica</option>
+                </select>
+                <br><br>
+            </div>
+            <div>
+                <label for="password">Ingresa una contraseña</label>
+                <input type="password" placeholder="ingresa una contraseña" required>
+
+                <br><br>
+            </div>
+            <div>
+                <input type="submit" value="Registrarme">
+            </div>
+
+            <h5>¿Tienes una cuenta? Inicia sección <a href="ingresar.html">aquí</a></h5>
+        </fieldset>
+    </nav>
+    
+</body>
+</html>
