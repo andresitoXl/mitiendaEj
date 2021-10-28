@@ -1,0 +1,210 @@
+$colorHeader: #f1f1f1;
+$colorHover: #ddd;
+$colorMenu: #f2f2f2;
+$colorRojo: #ce2020;
+
+.header {
+    background-color: $colorHeader;
+    padding: 80px;
+    text-align: center;
+    &-menu {
+        overflow: hidden;
+        background-color: #333;
+        &__a {
+            float: left;
+            display: block;
+            color: $colorMenu;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            &--activo{
+                background-color: #04aa6d;
+                color: white;
+            }
+            &:hover{
+                background-color: $colorHover;
+                color: black;
+            }
+        }
+    }
+    &-redesSociales a {
+        position: absolute;
+        left: -80px;
+        transition: 0.3s;
+        padding: 15px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 0px 5px 0px 5px;
+        &:hover{
+            left: 0px;
+        }
+    }
+    &-redesSociales__instagram{
+        top: 5px;
+        background: linear-gradient(to right, rgb(253, 60 ,118), rgb(255, 0, 221));
+        width: 100px;
+    }
+    &-redesSociales__facebook {
+        top: 60px;
+        background: linear-gradient(to right, rgb(110, 110, 255), blue);
+        width: 100px;
+    }
+    &-redesSociales__youtube {
+        top: 115px;
+        background: linear-gradient(to right, rgb(255, 166, 0), red);
+        width: 100px;
+    }
+    &-redesSociales__linkedin{
+        top: 170px;
+        background: linear-gradient(to right, rgb(0, 4, 255), rgb(86, 207, 255));
+        width: 100px;
+    }
+    &-subMenu {
+        font-size: 15px;
+        padding-top: 15px;
+        padding-right: 35px;
+        border: 10px;
+        float: right;
+        margin: 5px;
+        &__a {
+            text-decoration: none;
+            overflow: hidden;
+            color: black;
+        }
+    }
+}
+/*          NAV            */
+.contenedor-miSlider {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    &-div {
+        display: none;
+        &__prev {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: darkblue;
+            font-weight: bold;
+            color: white;
+            font-size: 18px;
+            transition: 0.6 ease;
+            border-radius: 0px 3px 3px 0px;
+            user-select: none;
+            &:hover{
+                background-color:black;
+            }
+        }
+        &__next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: darkblue;
+            font-weight: bold;
+            color: white;
+            font-size: 18px;
+            transition: 0.6 ease;
+            border-radius: 0px 3px 3px 0px;
+            user-select: none;
+            right: 0px;
+            border-radius: 3px 0px 0px 3px;
+            &:hover{
+                background-color: black;
+            }
+        }
+        &__textoNumero {
+            color: $colorMenu;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0px;
+        }
+    }
+    &-div img {
+        vertical-align: middle;
+    }
+    &__dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0px 2px;
+        background-color: $colorHover;
+        border-radius: 50%;
+        display: inline-block;
+        transition: 0.6s ease;
+    }
+}
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas: 
+    "grid-article grid-section grid-sectionUno grid-aside";
+    &-aside{
+        background-color: transparent;
+        width: 200px;
+        height: 300px;
+        border: 1px solid $colorHeader;
+        perspective: 1000px;
+    }
+    &-asideFlipBox {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+        &:hover{
+            transform: rotateY(180deg);
+        }
+        &__front {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            background-color: thistle;
+        }
+        &__back {
+            background-color: dodgerblue;
+            color: white;
+            transform: rotateY(180deg);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+    &-section button{
+        border: solid black;
+        background-color: white;
+        color: black;
+        padding: 5px 12px;
+        font-size: 13px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        border-color: #2196f3;
+    }
+    &-sectionUno button{
+        border: solid black;
+        background-color: white;
+        color: black;
+        padding: 5px 12px;
+        font-size: 13px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        border-color: #2196f3;
+    }
+}
+.header h2 {
+    color: $colorRojo;
+}
+
+
+
+
